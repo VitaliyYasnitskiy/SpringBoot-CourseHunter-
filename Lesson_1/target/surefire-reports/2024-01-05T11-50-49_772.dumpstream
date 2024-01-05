@@ -1,0 +1,5 @@
+# Created at 2024-01-05T11:50:50.093
+Boot Manifest-JAR contains absolute paths in classpath 'D:\YandexDisc\Orbita\GIT_WORK\SpringBoot_Lessons\CourseHunter\Lessons_solving\Lesson_1\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+
