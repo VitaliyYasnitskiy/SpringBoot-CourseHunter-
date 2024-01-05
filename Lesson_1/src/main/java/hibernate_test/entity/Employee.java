@@ -7,21 +7,19 @@ package hibernate_test.entity;
 //import javax.persistence.Id;
 
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name="employees")
 public class Employee {
-    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
+    @Column(name = "id")
 
     private int id;
 
     @Column(name="name")
-    private String name;
+    private String firstName;
 
     @Column(name="surname")
     private String surname;
@@ -34,8 +32,8 @@ public class Employee {
     public Employee() {
     }
 
-    public Employee(String name, String surname, String department, int salary) {
-        this.name = name;
+    public Employee(String firstName, String surname, String department, int salary) {
+        this.firstName = firstName;
         this.surname = surname;
         this.department = department;
         this.salary = salary;
@@ -45,7 +43,7 @@ public class Employee {
     public String toString() {
         return "Employee{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
+                ", firstName='" + firstName + '\'' +
                 ", surname='" + surname + '\'' +
                 ", department='" + department + '\'' +
                 ", salary=" + salary +
@@ -57,7 +55,7 @@ public class Employee {
     }
 
     public String getName() {
-        return name;
+        return firstName;
     }
 
     public String getSurname() {
@@ -76,8 +74,8 @@ public class Employee {
         this.id = id;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setName(String firstName) {
+        this.firstName = firstName;
     }
 
     public void setSurname(String surname) {
