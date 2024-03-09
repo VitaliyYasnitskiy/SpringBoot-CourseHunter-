@@ -9,7 +9,7 @@
 <form method="get" name="basicSearch" id = "basicSearch" action="showDetails">
 
     <input name="employeeName" type="text" class="BasicSearch" id="searchInput" placeholder="Write your name">
-    <button type= "submit" class="BasicSearch" id="searchBtn" placeholder="Write your name">Input</button>
+    <button type= "submit" class="BasicSearch" id="searchBtn" placeholder="Write your name">Submit</button>
 
 </form>
 
