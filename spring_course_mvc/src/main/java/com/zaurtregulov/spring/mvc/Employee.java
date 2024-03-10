@@ -2,6 +2,7 @@ package com.zaurtregulov.spring.mvc;
 import java.util.HashMap;
 import java.util.Map;
 
+// Это тестовый комит от 11.03.2024
 public class Employee {
     private String name;
     private String surname;
