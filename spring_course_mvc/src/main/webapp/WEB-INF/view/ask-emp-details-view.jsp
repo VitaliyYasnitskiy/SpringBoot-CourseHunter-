@@ -9,9 +9,12 @@
 <%--@elvariable id="employee" type=""--%>
 <form:form action = "showDetails" modelAttribute="employee">
     Name <form:input path = "name"/>
+    <form:errors path ="name"/>
+
     <br><br>
-    Surname <form:input path = "surname"/>
-        <br><br>
+    SurName <form:input path = "surname"/>
+    <form:errors path ="surname"/>
+    <br><br>
     Salary <form:input path="salary"/>
 <br><br>
     Department <form:select path="department">
@@ -37,7 +40,7 @@
     <br><br>
     <form:checkboxes path="languages" items="${employee.languageList}"/>
 
-
+    <br><br>
     <input type="submit" value="OK">
 </form:form>
 

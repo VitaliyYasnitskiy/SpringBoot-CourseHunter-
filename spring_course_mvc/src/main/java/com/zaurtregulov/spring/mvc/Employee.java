@@ -1,13 +1,21 @@
 package com.zaurtregulov.spring.mvc;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Employee {
+    @Size(min=2, max=10, message ="name must be min 2 symbols")
     private String name;
+//    @NotNull(message ="surname is required field")
+//    @NotEmpty(message ="surname is required field")
+    @NotBlank(message ="surname is required field")
+
     private String surname;
     private Map<String, String> departments;
     private String carBrand;
-
     private Map<String, String> carBrands;
 
     private String[] languages;
@@ -19,6 +27,7 @@ public class Employee {
     private String department;
 
     public Employee() {
+
         departments = new HashMap<>();
         departments.put("IT","Information Technology");
         departments.put("HR","Human Resourses");
@@ -32,8 +41,6 @@ public class Employee {
         languageList.put("English","En");
         languageList.put("Deutch","De");
         languageList.put("Franch","Fr");
-
-
     }
 
     public String getName() {
