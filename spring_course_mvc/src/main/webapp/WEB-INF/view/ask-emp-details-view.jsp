@@ -19,7 +19,7 @@
     </form:select>
     <br><br>
     Which car do you want?
-<%--    BMW <form:radiobutton path="carBrand" value = "BMW"/>--%>
+<%--    BMW1 <form:radiobutton path="carBrand" value = "BMW"/>--%>
 <%--    Audi <form:radiobutton path="carBrand" value = "Audi"/>--%>
 <%--    MB <form:radiobutton path="carBrand" value = "Mercedes-Benz"/>--%>
 
