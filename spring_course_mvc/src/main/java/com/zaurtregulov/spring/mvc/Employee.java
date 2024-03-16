@@ -11,6 +11,8 @@ public class Employee {
     private Map<String, String> carBrands;
 
 
+
+
     private int salary;
     private String department;
 
@@ -23,6 +25,8 @@ public class Employee {
         carBrands.put("BMW","BMW");
         carBrands.put("Audi","Audi");
         carBrands.put("Mersedes-Benz","MB");
+
+
     }
 
     public String getName() {
