@@ -1,8 +1,5 @@
 package com.zaurtregulov.spring.mvc;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import javax.validation.constraints.*;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -18,11 +15,18 @@ public class Employee {
     private String carBrand;
     private Map<String, String> carBrands;
 
+
     private String[] languages;
     private Map<String,String> languageList;
 
+    @Pattern(regexp="\\d{3}-\\d{2}-\\d{2}",message="Please use pattern XXX-XX-XX")
+    private String phoneNumber;
 
 
+
+
+@Min(value = 50, message ="must be greater than 500")
+@Max(value = 900, message ="must be less than 900")
     private int salary;
     private String department;
 
@@ -113,6 +117,14 @@ public class Employee {
 
     public void setLanguages(String[] languages) {
         this.languages = languages;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     @Override
