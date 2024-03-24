@@ -27,7 +27,17 @@
 
 <%--    <form:radiobuttons path="carBrand" items="${employee.carBrands}"/>--%>
 
-    <br><br>
+<%--    <br><br>--%>
+<%--    Foreign Language(s)?--%>
+<%--    <form:checkbox path="languages" items="${employee.languageList}"/>--%>
+<%--    <br><br>--%>
+
+        <br><br>
+        Phone number <form:input path="phoneNumber"/>
+        <form:errors path="phoneNumber"/>
+
+        <br><br>
+
     <input type="submit" value="OK">
 </form:form>
 

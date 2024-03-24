@@ -9,6 +9,7 @@ public class Employee {
     private String carBrand;
 
     private Map<String, String> carBrands;
+    private String email;
 
 
 
@@ -83,6 +84,14 @@ public class Employee {
 
     public void setCarBrands(Map<String, String> carBrands) {
         this.carBrands = carBrands;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     @Override
